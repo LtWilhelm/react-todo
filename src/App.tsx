@@ -28,7 +28,7 @@ function App() {
     const temp: ITodo[] = [...todos];
     const index = temp.findIndex(t => t.id === todo.id);
     
-    temp.splice(index);
+    temp.splice(index, 1);
     
     setTodos(temp);
   }
